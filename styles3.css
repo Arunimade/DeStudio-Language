@@ -1,0 +1,165 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f3f4f6;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #1e3a8a; /* Deep blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid #2563eb;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f3f4f6;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #dbeafe;
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#language-cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Language Cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    background-color: #2563eb; /* Light blue accent */
+    color: #ffffff;
+    padding: 15px;
+    font-size: 1.6em;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Button Style */
+button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+/* Footer */
+footer {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    margin-top: 40px;
+    border-top: 5px solid #2563eb;
+}
+
+footer p {
+    color: #dbeafe;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .card h3 {
+        font-size: 1.3em;
+    }
+
+    .card p {
+        font-size: 0.95em;
+    }
+}
+/* Remove underlining from links */
+a {
+    text-decoration: none;
+    color: inherit; /* Keeps the link color consistent with surrounding text */
+}
+
+/* Optional: Add hover effect for links */
+a:hover {
+    color: #2563eb; /* Changes color on hover for visibility */
+    text-decoration: underline; /* Optionally add underline on hover */
+}

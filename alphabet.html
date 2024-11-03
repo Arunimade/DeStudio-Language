@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gujarati Alphabets</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>🔤 Learn Gujarati Alphabets</h1>
+        <nav>
+            <ul>
+                <li><a href="guj.html">Home</a></li>
+                <li><a href="alphabet.html">Alphabets</a></li>
+                <li><a href="numbers.html">Numbers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="alphabet-section">
+            <h2>Gujarati Alphabet Practice</h2>
+            <p>Click the buttons to explore the alphabets with their pronunciation and sign representation.</p>
+            
+            <div class="alphabet-display">
+                <button onclick="previousAlphabet()">⬅️ Previous</button>
+                <div id="alphabetCard" class="card">
+                    <span id="alphabetSymbol" class="symbol">અ</span>
+                    <p id="alphabetPronunciation">A (અ)</p>
+                </div>
+                <button onclick="nextAlphabet()">➡️ Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Learning App for Deaf and Mute | All Rights Reserved</p>
+    </footer>
+
+    <script src="alphabet.js"></script>
+</body>
+</html>

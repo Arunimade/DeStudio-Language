@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathi Alphabets</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>🔤 Learn Marathi Alphabet</h1>
+        <nav>
+            <ul>
+                <li><a href="marathi.html">Home Page</a></li>
+                <li><a href="alphabetmarathi.html">Alphabet</a></li>
+                <li><a href="numbersmarathi.html">Numbers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="alphabet-section">
+            <h2>Marathi Alphabet Practice</h2>
+            <p>Click the buttons to learn each letter and its pronunciation.</p>
+
+            <div class="alphabet-display">
+                <button onclick="previousAlphabet()">⬅️ Previous</button>
+                <div id="alphabetCard" class="card">
+                    <span id="alphabetSymbol" class="symbol">अ</span> <!-- Example character -->
+                    <p id="alphabetPronunciation">A (अ)</p>
+                </div>
+                <button onclick="nextAlphabet()">➡️ Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Learning App for Languages Destudio | All Rights Reserved</p>
+    </footer>
+
+    <script src="alphabetmarathi.js"></script>
+</body>
+</html>

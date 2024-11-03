@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="or">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odia Alphabets</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>🔤 Learn Odia Alphabet</h1>
+        <nav>
+            <ul>
+                <li><a href="odia.html">Home Page</a></li>
+                <li><a href="alphabetodia.html">Alphabet</a></li>
+                <li><a href="numbersodia.html">Numbers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="alphabet-section">
+            <h2>Odia Alphabet Practice</h2>
+            <p>Click the buttons to learn each letter and its pronunciation.</p>
+
+            <div class="alphabet-display">
+                <button onclick="previousAlphabet()">⬅️ Previous</button>
+                <div id="alphabetCard" class="card">
+                    <span id="alphabetSymbol" class="symbol">ଅ</span> <!-- Example character -->
+                    <p id="alphabetPronunciation">A (ଅ)</p>
+                </div>
+                <button onclick="nextAlphabet()">➡️ Next</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Learning App for Languages Destudio | All Rights Reserved</p>
+    </footer>
+
+    <script src="alphabetodia.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bengali Alphabets</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <header>
+        <h1>🔤 Learn bengali alphabet </h1>
+        <nav>
+            <ul>
+                <li><a href="bengali.html">Home Page</a></li>
+                <li><a href="alphabetb.html">Alphabet</a></li>
+                <li><a href="numbersb.html">Numbers</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="alphabet-section">
+            <h2>Bengali Alphabet Practice</h2>
+            <p>Click the buttons to learn each letter and its pronunciation.</p>
+            
+
+            <div class="alphabet-display">
+                <button onclick="previousAlphabet()">⬅️ Previous</button>
+                <div id="alphabetCard" class="card">
+                    <span id="alphabetSymbol" class="symbol">অ</span>
+                    <p id="alphabetPronunciation">A (অ)</p>
+                </div>
+                <button onclick="nextAlphabet()">➡️ Next</button>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Learning App for Languages Destudio | All Rights Reserved</p>
+    </footer>
+
+    <script src="alphabetb.js"></script>
+</body>
+</html>
